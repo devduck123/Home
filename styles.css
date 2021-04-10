@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #1F2232;       /* to access -> var(--primary-color) */
+    --secondary-color: #CB04A5;
+}
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--primary-color);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: clamp(0.9rem, 2.5vw, 1.015rem);
+    max-width: 90%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+#menu-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0.5em;
+}
+
+.menu-button {
+    box-shadow: 2px 4px 0px 0px var(--secondary-color);
+	background: transparent;
+	border-radius: 10px;
+	border: 1px solid var(--secondary-color);
+	display: inline-block;
+	cursor: pointer;
+    outline: none;
+    overflow: hidden;
+	color: var(--primary-color);
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px var(--primary-color);
+    margin: 0.3em 0.4em 0.3em 0.4em;
+    padding: 0.4em;
+    transition: 1s ease-in-out;
+}
+
+.menu-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(4px);
+    text-decoration: underline;
+}
+
+.menu-button:active {
+    position: relative;
+    top: 1px;
+}
+
+#intro {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#info {
+    margin-top: 3em;
+    padding: 1.6em;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgba(0, 0, 0.2);
+    overflow: hidden;
+}
+
+#info-list {
+    list-style: square;
+    margin: 0.1em 0 0 0.6em;
+    padding: 1em;
+}
+
+.info-item {
+    margin-bottom: 0.5em
+}
+
+#skills {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    padding: 1.6em;
+}
+
+.skills-list {
+    display: flex;
+    margin: 0.4em 0 0.2em 0.4em;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em;
+    margin: 0.6em;
+    border-radius: 12px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+}
+
+.skills-name {
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+    font-weight: bold;
+}
